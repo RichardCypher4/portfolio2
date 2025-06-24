@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import './home.scss';
 import { motion } from 'framer-motion';
 import MoonLogo from '../assets/moonliht.jpg';
-import AppPreview from '../assets/AppPreview.webp';
-import Hero from '../assets/hero4.png'
+import Hero from '../assets/hero4.png';
+
+import Skill from '../assets/skills.png'
+import Book from '../assets/bookstore.jpg'
+import Net from '../assets/pop.png'
 import Footer from './footer'
 
 function Home() {
@@ -79,7 +82,7 @@ My core expertise spans Java, React, React Native, Spring Boot, MongoDB, Junit, 
       >
         <h2 className="portfolio">PORTFOLIO</h2>
         <motion.a
-          href="https://clone-dispatch.netlify.app"
+          href="https://the-hive-portfolio.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
           className="app-link"
@@ -88,14 +91,51 @@ My core expertise spans Java, React, React Native, Spring Boot, MongoDB, Junit, 
           whileTap={{ scale: 0.98 }}
         >
           <div className="app-text">
-            <h3>Clone-Dispatch</h3>
+            <h3>The-hive-portfolio</h3>
             <p>
-              A React application designed to streamline the dispatch process for clone operations. It provides an interface for managing clone dispatch requests, tracking status updates, and facilitating communication between clone operators and dispatch teams.
-              <strong>clone-dispatch.netlify.app</strong>
+              The Hive is a modern and visually engaging portfolio designed to showcase creativity, technical skills, and personal projects in a clean, user-friendly format. Built with a focus on both aesthetics and functionality, it highlights your work across design, development, and problem-solving, making it ideal for attracting potential employers, collaborators, or clients. With dynamic sections for projects, about, contact, and possibly blogs or achievements, The Hive reflects a professional yet personal brand, emphasizing innovation, attention to detail, and a passion for digital craftsmans
+              <strong>the-hive-portfilio.netlify.app</strong>
             </p>
           </div>
-          <img src={AppPreview} alt="App Preview" className="app-image" />
+          <img src={Skill} alt="App Preview" className="app-image" />
         </motion.a>
+          <motion.a
+          href="https://book-store-v2.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="app-link"
+          variants={imageVariants}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          <div className="app-text">
+            <h3>Book Store</h3>
+            <p>
+             The Book Service API is a RESTful backend built with Spring Boot and MySQL, forming the core of a full stack book store application. It manages all book-related data and exposes endpoints for the frontend (typically built with React using Vite) to interact with. The service allows users to retrieve all books, get details of a specific book by ID, add new books (used by admins), update existing ones, and delete books from the system. It defines a Book model containing fields such as bookId, title, author, description, price, and createdAt. These operations are exposed via HTTP methods like GET, POST, PUT, and DELETE through the /books endpoint. The backend also handles CORS configuration to allow requests from the frontend running on http://localhost:5173. This setup enables smooth integration with the frontend, where users can view book listings, search for a book, and manage inventory if they have admin privileges. The API is designed to be deployed on platforms like Render, while the frontend communicates with it using Axios or Fetch to create a seamless user experience.
+              <strong>book-store-v2.vercel.app</strong>
+            </p>
+          </div>
+          <img src={Book} alt="App Preview" className="app-image" />
+        </motion.a>
+        <motion.a
+  href="https://github.com/RichardCypher4/Netflix-clone"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="app-link"
+  variants={imageVariants}
+  whileHover={{ scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+>
+  <div className="app-text">
+    <h3>Netflix Clone (React Native)</h3>
+    <p>
+      The React Native Netflix Clone is a mobile streaming UI replica built using React Native and Expo. It mimics the core layout and functionality of the Netflix app, including featured banners, movie thumbnails, category browsing, and smooth horizontal carousels. The app uses dynamic navigation and scalable components with custom styling, and it's optimized for mobile responsiveness and performance. It's a UI-focused clone ideal for demonstrating React Native layout skills, state handling, and screen transitions.
+      <strong> github.com/RichardCypher4/Netflix-clone </strong>
+    </p>
+  </div>
+  <img src={Net} alt="App Preview" className="app-image" />
+</motion.a>
+
           <motion.a
           href="https://appartment-c.netlify.app"
           target="_blank"
