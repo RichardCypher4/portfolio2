@@ -7,6 +7,7 @@ import Hero from '../assets/hero4.png';
 import Skill from '../assets/skills.png'
 import Book from '../assets/bookstore.jpg'
 import Net from '../assets/pop.png'
+import Cars from '../assets/cars.jpg'
 import Footer from './footer'
 
 function Home() {
@@ -82,7 +83,7 @@ My core expertise spans Java, React, React Native, Spring Boot, MongoDB, Junit, 
       >
         <h2 className="portfolio">PORTFOLIO</h2>
         <motion.a
-          href="https://the-hive-portfolio.netlify.app"
+          href="https://graceful-tartufo-94bb15.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="app-link"
@@ -90,6 +91,27 @@ My core expertise spans Java, React, React Native, Spring Boot, MongoDB, Junit, 
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
+           <div className="app-text">
+            <h3>Car Rentals</h3>
+            <p>
+              The Car Rental Management System is a full-stack web application designed to simplify the process of booking, renting, and managing cars. The project is built with a React.js frontend for an interactive user experience and a Spring Boot backend for a secure and scalable API.
+
+The platform allows customers to browse available cars, view details, and make bookings online, while admins can manage the fleet, pricing, and reservations.
+              <strong>https://graceful-tartufo-94bb15.netlify.app/</strong>
+            </p>
+          </div>
+          <img src={Cars} alt="App Preview" className="app-image" />
+        </motion.a>
+          <motion.a
+          href=" https://the-hive-portfolio.netlify.app" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="app-link"
+          variants={imageVariants}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          
           <div className="app-text">
             <h3>The-hive-portfolio</h3>
             <p>
@@ -97,6 +119,8 @@ My core expertise spans Java, React, React Native, Spring Boot, MongoDB, Junit, 
               <strong>the-hive-portfilio.netlify.app</strong>
             </p>
           </div>
+
+
           <img src={Skill} alt="App Preview" className="app-image" />
         </motion.a>
           <motion.a
@@ -126,6 +150,9 @@ My core expertise spans Java, React, React Native, Spring Boot, MongoDB, Junit, 
   whileHover={{ scale: 1.02 }}
   whileTap={{ scale: 0.98 }}
 >
+
+  
+  
   <div className="app-text">
     <h3>Netflix Clone (React Native)</h3>
     <p>
